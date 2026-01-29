@@ -1,0 +1,7 @@
+gradio
+git+https://github.com/huggingface/diffusers
+transformers
+kernels
+gradio[mcp]
+pytz
+accelerate
