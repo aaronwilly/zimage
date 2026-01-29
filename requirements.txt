@@ -1,7 +1,16 @@
 gradio
-git+https://github.com/huggingface/diffusers
-transformers
-kernels
 gradio[mcp]
-pytz
+
+# Model/pipeline deps (Z-Image-Turbo expects ZImagePipeline + Qwen3Model)
+diffusers==0.36.0
+transformers==4.51.1
 accelerate
+safetensors
+kernels
+pytz
+
+# GPU stack (see README)
+torch==2.7.1
+torchvision
+torchaudio
+xformers==0.0.31
